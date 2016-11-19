@@ -1,5 +1,5 @@
 Name:           paperwork-backend
-Version:        1.0.3
+Version:        1.0.4
 Release:        1%{?dist}
 Summary:        Backend part of Paperwork (Python API no UI)
 
@@ -13,6 +13,7 @@ BuildRequires:  python3-pillow-devel
 BuildRequires:  python3-setuptools
 Requires:  poppler-glib
 Requires:  pygobject3
+Requires:  python3-termcolor
 Requires:  python3-whoosh
 
 
@@ -51,5 +52,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/paperwork-shell
 
 %changelog
+* Sat Nov 19 2016 James Davidson <james@greycastle.net> - 1.0.4-1
+- Update to 1.0.4
+
 * Fri Nov 18 2016 James Davidson <james@greycastle.net> - 1.0.3-1
 - Initial packaging
