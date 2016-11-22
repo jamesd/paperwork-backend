@@ -1,5 +1,5 @@
 Name:           paperwork-backend
-Version:        1.0.4
+Version:        1.0.5
 Release:        1%{?dist}
 Summary:        Backend part of Paperwork (Python API no UI)
 
@@ -52,6 +52,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/paperwork-shell
 
 %changelog
+* Tue Nov 22 2016 James Davidson <james@greycastle.net> - 1.0.5-1
+- Update to 1.0.5
+
 * Sat Nov 19 2016 James Davidson <james@greycastle.net> - 1.0.4-1
 - Update to 1.0.4
 
